@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    nav .nav-links a:hover {
+      color: #79b5ac;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="p-2 w-full flex items-center bg-black justify-between">
+    <h1 class="text-2xl text-white font-bold">Vishnu</h1>
+
+
+    <div class="nav-links items-center text-white gap-5">
+      <p><a href="#">Home</a></p>
+      <p><a href="#">About</a></p>
+      <p><a href="#">Contact</a></p>
+    </div>
+
+    <div class="bars" id="bars">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+        class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </div>
+  </nav>
+
+  <div
+    class="sidebar md:hidden transition-all duration-1000 fixed  flex items-center justify-center bg-indigo-950 text-white"
+    style="position:fixed; right: 688px;   top: 0;  width: 50%; height: 100vh;">
+
+
+
+
+
+    <div class="">
+      <svg xmlns="http://www.w3.org/2000/svg" id="close" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-10 left-0 absolute top-0">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      </svg>
+      <p class="my-10 hover:-translate-x-2 transition-all duration-1000"><a href="#">Home</a></p>
+      <p class="my-10 hover:-translate-x-2 transition-all duration-1000"><a href="#">About</a></p>
+      <p class="my-10 hover:-translate-x-2 transition-all duration-1000"><a href="#">Contact</a></p>
+      <p class="my-10 hover:-translate-x-2 transition-all duration-1000"><a href="#">Skiils</a></p>
+      <p class="my-10 hover:-translate-x-2 transition-all duration-1000"><a href="#">Projects</a></p>
+    </div>
+  </div>
+
+
+  <div style="height: 100vh;" class="hero flex justify-center items-center p-20  text-white bg-indigo-900 w-full">
+    <div>
+      <h1 style="font-size: 40px; font-weight: 700;">I'm Vishnu Vardhan.</h1>
+      <h1 style="font-size: 30px; font-weight: 600;">I'm a Frontend developer and UI/UX fresher.</h1>
+      <button class="bg-slate-500 hover:bg-indigo-300 p-1 border my-5" style="border-radius: 8px;">View CV</button>
+    </div>
+  </div>
+
+
+<div class="mega">
+<div class="aboutme bg-black my-5 text-white md:p-20 w-full" style="height: 150vh;">
+        <h1 class="text-2xl font-bold my-5">About Me</h1>
+        <p class="hi text-2xl">👋 Hi there! I’m Vishnu, a Frontend Developer with a fresh perspective and a keen eye for UI/UX design. I’m passionate about creating seamless user experiences through clean code and thoughtful design.</p>
+
+      <div class="desk my-10">
+        <h1 class="text-2xl">What I Bring to the Table:</h1>
+        
+        <div class="bg-[#f2e3c6] my-4 text-black p-5 hover:translate-x-2 transition-all duration-1000" style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; border-top: 5px solid #79b5ac;">
+<p class="text-3xl">Technical Skills:</p>
+<ul class="p-5">
+<li>Proficient in HTML, CSS, and JavaScript.</li>
+<li>Familiar with popular frameworks like React and Git.</li>
+<li>Always eager to learn and explore new technologies.</li>
+</ul>
+</div>
+
+<div class="bg-[#17f9ff] text-black my-4  p-5 hover:translate-x-2 transition-all duration-1000" style="border-top: 5px solid #ff6600; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+<p class="text-3xl">Design Sensibility:</p>
+<ul class="p-5">
+
+<li>I believe that great code deserves an equally great design.</li>
+<li>I pay attention to details, ensuring that every pixel counts.</li>
+    </ul>
+
+</div>
+
+<div class="bg-[#79b5ac] c p-5 hover:translate-x-2 transition-all duration-1000" style="border-top: 5px solid #ff6600; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+  <p class="text-3xl">Collaborative Mindset:</p>
+  <ul class="p-5">
+  
+  <li>I enjoy working in cross-functional teams.</li>
+<li>Let’s build something amazing together!</li>
+      </ul>
+  
+  </div>
+</div>
+
+
+      </div>
+
+</div>
+
+
+
+
+
+
+  <div class="skills bg-emerald-300  p-20">
+
+    <h1 class="text-2xl font-bold text-purple-950">Skills</h1>
+
+<div class="inner bg-indigo-600 md:p-5 rounded-md my-5">
+    <div id="more">
+  <div class="flex justify-center items-center mt-5 gap-10">
+    <div class="text-center">
+    <img id="img1" src="html-5-svgrepo-com.svg" class="h-20 w-20 hover:scale-150 transition-all duration-1000" alt="">
+      <p class="hidden transition-all duration-1000 my-2" id="text1">HTML</p>  
+  </div>
+  <div class="text-center">
+    <img src="css.svg" id="img2" class="h-20 w-20 hover:scale-150 transition-all duration-1000" alt="">
+    <p class="hidden transition-all duration-1000 my-2" id="text2">CSS</p>  
+  </div>
+
+  <div class="text-center">
+    <img src="js-svgrepo-com.svg" id="img3" class="h-20 w-20 hover:scale-150 transiall duration-1000" alt="">
+    <p class="hidden transition-all duration-1000 my-2" id="text3">JavaScript</p>  
+    </div>
+  </div>
+
+  <div class="relative flex justify-center items-center my-7">
+<button id="morebtn" class="bg-indigo-500 p-1  absolute" style="border-radius: 5px;">Show More</button>
+  </div>  
+</div>
+
+<div id="less" class="hidden">
+<div class="flex justify-center items-center mt-5 gap-10">
+  <img src="github-142-svgrepo-com.svg" class="h-20 w-20 hover:scale-150 transition-all duration-1000" alt="">
+  <img src="reactjs-svgrepo-com.svg" class="h-20 w-20 hover:scale-150 transition-all duration-1000" alt="">
+  <img src="figma-svgrepo-com.svg" class="h-20 w-20 hover:scale-150 transiall duration-1000" alt="">
+</div>
+
+<div class="flex justify-center items-center my-7  text-white">
+<button id="lessbtn" class="bg-indigo-500 p-1" style="border-radius: 5px;">Show Less</button>
+</div>
+</div>
+</div>
+
+  </div>
+
+  <div class="projects my-5">
+    <div class="project1 p-10">
+      <img  class="w-full" src="https://img-c.udemycdn.com/notices/web_carousel_slide/image_responsive/3eb24d8e-10d6-4cf7-953a-602f342f32f5.jpg" alt="">
+      <p class="text-xl text-center font-medium">Udemy-an E-learing programming platform with responsive design</p>
+      <div class="tec flex gap-5 my-4 items-center justify-center">
+    <p class="bg-[#69d2e7] inline p-1 hover:-translate-y-1 transition-all duration-1000" style="border-radius: 5px;">HTML</p>
+    <p class="bg-[#69d2e7] inline p-1 hover:-translate-y-1 transition-all duration-1000" style="border-radius: 5px;">CSS</p>
+    </div>
+    <div class="view flex justify-center items-center">
+      <button style="border-radius: 5px;"  class="view1 w-24 bg-[#001449] text-white p-1">View</button>
+    </div>
+    <div class="btns flex items-center justify-center gap-5 my-5">
+      <button style="border-radius: 5px;display: none; " class="website1 w-32  bg-[#ffff00] text-white p-1"><a href="https://vishnu899.github.io/udemy-clone/">View Website</a></button>
+      <button style="border-radius: 5px;display: none; " class="code1 w-24 bg-[#d9abff] text-white p-1"><a href="https://github.com/vishnu899/udemy-clone">View Code</a></button>
+    </div>
+    </div>
+
+    <div class="project2 p-10">
+    <img src="https://github.com/vishnu899/Greenden__/assets/173874095/e5d173e0-4d9e-4a34-8265-9c9ff693734a" class="w-full" alt="">
+    <p class="text-xl text-center font-medium">Greenden-an Plant Buying Website with responsive design</p>
+      <div class="tec flex gap-5 my-4 items-center justify-center">
+    <p class="bg-[#69d2e7] inline p-1 hover:-translate-y-1 transition-all duration-1000" style="border-radius: 5px;">HTML</p>
+    <p class="bg-[#69d2e7] inline p-1 hover:-translate-y-1 transition-all duration-1000" style="border-radius: 5px;">CSS</p>
+    </div>
+    <div class="view flex justify-center items-center">
+      <button style="border-radius: 5px;" class="view2 w-24 bg-[#001449] text-white p-1">View</button>
+    </div>
+    <div class="btns flex items-center justify-center gap-5 my-5">
+      <button style="border-radius: 5px; display: none; " class="website2 w-32  bg-[#ffff00] text-white p-1"><a href="https://vishnu899.github.io/Greenden__/">View Website</a></button>
+      <button style="border-radius: 5px; display: none; " class="code2 w-24 bg-[#d9abff] text-white p-1"><a href="https://github.com/vishnu899/Greenden__?tab=readme-ov-file">View Code</a></button>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="project3 p-10">
+      <img src="https://github.com/vishnu899/Tripadviser/assets/173874095/5b62125f-26cd-4958-bcd8-019c4be999f0" class="w-full" alt="">
+      <p class="text-xl text-center font-medium">Tripadviser an Trip planning Website with responsive design</p>
+        <div class="tec flex gap-5 my-4 items-center justify-center">
+      <p class="bg-[#69d2e7] inline p-1 hover:-translate-y-1 transition-all duration-1000" style="border-radius: 5px;">HTML</p>
+      <p class="bg-[#69d2e7] inline p-1 hover:-translate-y-1 transition-all duration-1000" style="border-radius: 5px;">CSS</p>
+      </div>
+      <div class="view flex justify-center items-center">
+        <button style="border-radius: 5px;" class="view3 w-24 bg-[#001449] text-white p-1">View</button>
+      </div>
+      <div class="btns flex items-center justify-center gap-5 my-5">
+        <button style="border-radius: 5px; display: none; " class="website3 w-32  bg-[#ffff00] text-white p-1"><a href="https://vishnu899.github.io/Tripadviser/">View Website</a></button>
+        <button style="border-radius: 5px; display: none; " class="code3 w-24 bg-[#d9abff] text-white p-1"><a href="https://github.com/vishnu899/Tripadviser/settings/pages">View Code</a></button>
+      </div>
+      </div>
+      </div>
+
+      <div class="project3 p-10">
+        <img src="Screenshot (3).png" class="w-full" alt="">
+        <p class="text-xl text-center font-medium">LinkedIn Clone with responsive Design. </p>
+          <div class="tec flex gap-5 my-4 items-center justify-center">
+        <p class="bg-[#69d2e7] inline p-1 hover:-translate-y-1 transition-all duration-1000" style="border-radius: 5px;">HTML</p>
+        <p class="bg-[#69d2e7] inline p-1 hover:-translate-y-1 transition-all duration-1000" style="border-radius: 5px;">CSS</p>
+        </div>
+        <div class="view flex justify-center items-center">
+          <button style="border-radius: 5px;" class="view4 w-24 bg-[#001449] text-white p-1">View</button>
+        </div>
+        <div class="btns flex items-center justify-center gap-5 my-5">
+          <button style="border-radius: 5px; display: none; " class="website4 w-32  bg-[#ffff00] text-white p-1"><a href="https://vishnu899.github.io/Linkedin/">View Website</a></button>
+          <button style="border-radius: 5px; display: none; " class="code4 w-24 bg-[#d9abff] text-white p-1"><a href="https://github.com/vishnu899/Linkedin">View Code</a></button>
+        </div>
+        </div>
+        </div>
+    
+  </div>
+
+
+   <div class="contact">
+    <div class="container">
+      <form action="action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+          <label for="country">Country</label>
+          <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+          </select>
+  
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+          <input type="submit" value="Submit">
+      </form>
+  </div>
+  
+   </div>
+
+   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 fixed">
+    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+  </svg>
+  
+
+  <footer class="footer">
+    <div class="footer-social">
+        <a href="#"><img src="twitter-logo-fill-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="facebook-svgrepo-com.svg" alt="Twitter"></a>
+        <a href="#"><img src="linkedin-linked-in-svgrepo-com.svg" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2024 Vishnu Vardhan</p>
+  </footer>
+
+
+    <!-- Other content of your website -->
+
+    <!-- Footer -->
+  <footer>
+    <div class="icons">
+      
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+echo "# portfolio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vishnu899/portfolio.git
+git push -u origin main
